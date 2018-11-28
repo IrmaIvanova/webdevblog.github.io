@@ -206,7 +206,7 @@ footer h4 {
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 35% 25% 25%;
+    grid-template-columns: 30% 30% 30%;
     grid-column-gap: 3%;
 }
 
@@ -214,8 +214,9 @@ footer h4 {
     display: grid;
     grid-template-columns: 15% 80%;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 10px;
 }
+
 .when {
     font-size: 9px;
     color: #ffea00;
@@ -233,11 +234,15 @@ footer h4 {
     display: inline-block;
 }
 
+.about-us p {
+    padding-top: 20px;
+}
+
 .images {
     margin-top: 10px;
 }
 
-.imges img {
+.images img {
     float: left;
     padding: 5px;
 }
@@ -247,6 +252,8 @@ footer h4 {
 }
 
 .social {
+    display: grid;
+    grid-template-columns: auto auto;
     margin-top: 20px;
 }
 
@@ -255,7 +262,45 @@ footer h4 {
     margin: 0;
 }
 
+.allcontacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+.address p, phone p, .email p {
+    width: 500px;
+    height: 30px;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.address:before {
+    content:"";
+    background-image: url(../img/address.png);
+    width: 28px;
+    height: 28px;
+    float: left;
+    margin: 10px 20px 10px 0;
+}
 
+.phone:before {
+    content:"";
+    background-image: url(../img/adress.png);
+    width: 28px;
+    height: 28px;
+    float: left;
+    margin: 10px 20px 10px 0;
+}
+
+.email:before {
+    content:"";
+    background-image: url(../img/email.png);
+    width: 28px;
+    height: 28px;
+    float: left;
+    margin: 10px 20px 10px 0;
+}
 
 @media screen and (max-width: 420px) and (-webkit-min-device-pixel-ratio:0) {
     .header_container {
