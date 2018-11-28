@@ -201,6 +201,7 @@ footer {
 
 footer h4 {
     font-size: 18px;
+    margin-bottom: 20px;
 }
 .footer-container{
     width: 90%;
@@ -268,13 +269,29 @@ footer h4 {
     justify-content: center;
     margin-top: 30px;
 }
-.address p, phone p, .email p {
+.address p, 
+.phone p, 
+.email p {
     width: 500px;
     height: 30px;
     padding-left: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.phone {
+    display: flex;
+}
+
+.p2 {
+    padding-left: 10px;
+}
+
+.email a{
+    color:#ffea00;
+}
+
+
 .address:before {
     content:"";
     background-image: url(../img/address.png);
@@ -300,6 +317,32 @@ footer h4 {
     height: 28px;
     float: left;
     margin: 10px 20px 10px 0;
+}
+
+.follow {
+    margin-top: 60px;
+}
+
+.follow h4 {
+    margin-bottom: 20px;
+}
+
+.follow input.underline {
+    background: #414146;
+    border: none;
+    border-bottom: solid 2px #ffea00;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+form {
+    display: flex;
 }
 
 @media screen and (max-width: 420px) and (-webkit-min-device-pixel-ratio:0) {
